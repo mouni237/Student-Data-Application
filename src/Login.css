@@ -1,0 +1,205 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.admission-page {
+  min-height: 100vh;
+  display: flex;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+
+  background-image:url("./asset/clgi.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  /* background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; */
+}
+
+.admission-banner {
+  width: 42%;
+  padding: 55px 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 16px;
+  background: transparent;
+}
+.banner-small {
+  color: #d6d4ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.admission-banner h1 {
+  font-size: clamp(38px, 4vw, 60px);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.banner-text {
+  max-width: 340px;
+  line-height: 1.8;
+  color: #eeeeff;
+}
+
+.banner-bottom {
+  margin-top: 50px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #dddafa;
+}
+
+/* Form section */
+
+.form-container {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+  
+  background: white;
+  border-radius:16px;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form-heading p {
+  color: #7771c9;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.form-heading h2 {
+  color: #30345f;
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.form-heading span {
+  color: #777;
+  font-size: 13px;
+}
+
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 21px 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  color: #303047;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  border: 1px solid #d9dbe7;
+  border-radius: 5px;
+  background: #fcfcff;
+  color: #33334a;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #7771c9;
+  box-shadow: 0 0 0 2px #7771c91c;
+}
+
+.field input::placeholder {
+  color: #999aaa;
+}
+
+/* Submit button */
+
+.submit-btn {
+  display: block;
+  width: 210px;
+  max-width: 100%;
+  margin: 32px auto 0;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #8aaf0a;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background: #719000;
+  transform: translateY(-2px);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 11px;
+  color: #89899b;
+  margin-top: 15px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 900px) {
+  .admission-page {
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  .admission-banner {
+    width: 100%;
+    min-height: 300px;
+    padding: 35px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .admission-banner h1 {
+    font-size: 40px;
+  }
+
+  .banner-bottom {
+    margin-top: 15px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    padding: 22px 15px;
+  }
+
+  .form-heading h2 {
+    font-size: 19px;
+  }
+}

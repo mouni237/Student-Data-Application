@@ -1,0 +1,56 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.skills-page {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 30px;
+  background-image: url('./port.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.skills-page h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill-card {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 25px 15px;
+  width: 180px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-7px);
+  background: white;
+  border-color: #6c63ff;
+}
+
+.skill-card h3 {
+  color: #62616f;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #333;
+  margin: 0;
+}

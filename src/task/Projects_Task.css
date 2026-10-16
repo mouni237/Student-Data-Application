@@ -1,0 +1,49 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.projects {
+  min-height: 100vh;
+  text-align: center;
+  padding: 30px;
+  background-image: url('./port.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.projects h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.project-card {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  color: #3a3a3f;
+}
+
+.project-card h4 {
+  color: #333;
+}
+
+.project-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%;
+  }
+}

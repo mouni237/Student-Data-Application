@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.portfolio-home {
+  min-height: 100vh;
+  background-image: url('./port.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #dfdbdb;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 5px #ddd;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #1b1616;
+}
+
+.navbar h2 span {
+  color: #6c63ff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #171313;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #c45296;
+}
+
+/* Home */
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hello {
+  color: #ff63a1;
+  letter-spacing: 2px;
+}
+
+.hero-section h1 {
+  font-size: 42px;
+  margin: 10px;
+}
+
+.hero-section h1 span {
+  color: #ff63be;
+}
+
+.hero-section h3 {
+  color: #f2efef;
+  font-weight: normal;
+}
+
+.description {
+  max-width: 500px;
+  color: #f7f3f3;
+  line-height: 1.7;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 11px 22px;
+  margin-top: 15px;
+  background: #e1689e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.start-button:hover {
+  background: #d848b4;
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+}

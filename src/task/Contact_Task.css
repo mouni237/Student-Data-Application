@@ -1,0 +1,55 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-page {
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url('./port.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.contact-page h1 {
+  color: white;
+}
+
+.contact-page h1 span {
+  color: #fdb5f1;
+}
+
+.contact-page > p {
+  color: white;
+}
+
+.contact-card {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h2 {
+  text-align: center;
+  color: #702f5e;
+}
+
+.contact-card p {
+  color: #333;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    width: 100%;
+  }
+}
